@@ -5,8 +5,8 @@ Gerard Brown Technical Assessment
 Notes
 -----
 This project was developed on CentOS7 and assumes an environment that allows for setting up a relevant virtual host.
-Due to time constraints the code was tested only on CentOS 7 running php 5.4 against a MySQL 5.5 database with the
-latest Chrome browser. If you have any trouble installing or running the code please contact me, I will be glad to
+Due to time constraints the code was tested only on CentOS 7 running php 5.6 against a MySQL 5.5 database with the
+latest Chrome and Firefox browser. If you have any trouble installing or running the code please contact me, I will be glad to
 assist.
 
 
@@ -26,12 +26,4 @@ Installation
 6. Setup a virtual host for the project and restart the web server.
    An example apache vhost configuration is provided in deploy/vhost_exchange.conf
    Please ensure that specified folders is corrected in the vhost config before restarting the web server.
-
-
-Configuration
--------------
-1. Surcharge and Discount can be configured in the currency table per currency.
-2. Configuration of email notifications can be done by editing config/data-action-notification.config.php
-   The functionality allows for setting up email notifications based on data action triggers with specfied
-   data populated in the email.
 
