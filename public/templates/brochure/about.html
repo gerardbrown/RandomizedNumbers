@@ -1,0 +1,334 @@
+
+<div class="cover about row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">About</h1>
+
+			<p>
+				The following sections provides a quick overview of this project.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="cover about row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">Configuration</h1>
+
+			<p>
+				Surcharge and Discount can be configured in the currency table per currency.
+			</p>
+			<p>
+				Configuration of email notifications can be done by editing config/data-action-notification.config.php<br/>
+				The functionality allows for setting up email notifications based on data action triggers with specfied
+				data populated in the email.
+			</p>
+		</div>
+	</div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="cover row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">Frameworks</h1>
+
+			<p>
+				<i>- Frameworks used to build this project -</i>
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Zend Framework 2.3</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				The most popular framework for modern, high-performing PHP applications.
+				I have chosen to use Zend Framework to provide for ease of deployment.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">jQuery 1.11.1</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>jQuery is a fast, small, and feature-rich JavaScript library.
+				It makes things like HTML document traversal and manipulation, event handling,
+				animation,
+				and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Bootstrap 3</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>Bootstrap is the most popular HTML, CSS, and JS framework
+				for developing responsive, mobile first projects on the web.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+
+
+
+<div class="cover row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">Design Patterns</h1>
+
+			<p>
+				<i>- Design patterns employed -</i>
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Front Controller</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				The front controller pattern is where you have a single entrance point for your web application
+				that handles all of the requests. This code is responsible for loading all of the dependencies,
+				processing the request and sending the response to the browser. The front controller pattern can
+				be beneficial because it encourages modular code and gives you a central place to hook in code that
+				should be run for every request such as input sanitization.
+			</p>
+			<p>
+				In this project the entire web api interface is handled by a single controller:
+				\Core\Controller\ApiController
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Registry</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				To implement a central storage for objects often used throughout the application, this is typically
+				implemented using an abstract class with only static methods (or using the Singleton pattern).
+			</p>
+			<p>
+				For this project the registry (\Core\Registry) provides global access to the Doctrine Entity Manager
+				and all Service classes.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Dependency Injection</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				To implement a loosely coupled architecture in order to get better testable,
+				maintainable and extendable code.
+			</p>
+			<p>
+				For this project the registry (\Core\Registry) provides dependency injection of the
+				Doctrine Entity Manager into the service classes to ensure an architecture where
+				test code can provide either a mock entity manager or one pointed to a test database.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+
+
+
+<div class="cover row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">Best Practice Implementation</h1>
+
+			<p>
+				<i>- Implementation of selected best practices -</i>
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Black-box / De-coupling</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				Services black-boxed and de-coupled to allow for easy replacement of services without affecting
+				the rest of the codebase.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Separation of Concerns</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				For this project separation was implemented by providing isolation of Services, API and Input Validation.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Thin Controller</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				By keeping the controller thin (in this case only handling validation and service routing) and keeping
+				the business logic in the service layer provides for a central location of business logic without the
+				API endpoint being affected by service changes and business logic changes.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+
+
+
+<div class="cover row">
+	<div class="col-md-12">
+		<div class="inner cover">
+			<h1 class="cover-heading">API Design</h1>
+
+			<p>
+				<i>- Implementation of web service API -</i>
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">Front Controller</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				The Front Controller patterns allow for a simplified and consistent api
+				that minimizes maintenance and debugging on the API layer. This also assists
+				in encouraging a standardized service interface for all service classes.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">API Versioning</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				By versioning the API and having the version of the API specified in the URL assists
+				in provided dedicated space for different version API that could have breaking changes
+				without affecting existing systems that will need time to migrate to a newer version.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>
+
+<div class="cover row">
+	<div class="col-md-4">
+		<div class="inner cover">
+			<h2 class="cover-heading">JSON POST</h2>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="inner cover">
+			<p>
+				<br/>
+				Although many suggest a rest interface using the various http methods such as GET and PUT
+				I have chosen to implement a pure POST architecture using JSON as the data format. The advantage of
+				this is once again a simpler API that is easier to maintain and also provides the possibility of
+				easier access from a client as there needs to be no switching between methods. It also assists in
+				ease of debugging as there is only one end-point and one method of data transfer.
+			</p>
+		</div>
+	</div>
+</div>
+<br/>

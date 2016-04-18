@@ -1,0 +1,16 @@
+{
+  "name": "inter-africa/simple-exchange",
+  "description": "Simple exchange application",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "framework",
+    "exchnage",
+    "zf2"
+  ],
+  "homepage": "http://my.code.example.local/",
+  "require": {
+    "php": ">=5.3.3",
+    "zendframework/zendframework": "2.3.3",
+    "doctrine/doctrine-orm-module": "0.7.0"
+  }
+}
