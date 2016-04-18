@@ -24,6 +24,6 @@ Installation
     ./rebuild-db.sh
 5. Ensure that the rebuild script executed without errors.
 6. Setup a virtual host for the project and restart the web server.
-   An example apache vhost configuration is provided in deploy/vhost_exchange.conf
+   An example apache vhost configuration is provided in deploy/vhost_random_numbers.conf
    Please ensure that specified folders is corrected in the vhost config before restarting the web server.
 

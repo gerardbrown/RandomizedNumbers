@@ -1,5 +1,5 @@
 {
-  "name": "inter-africa/simple-exchange",
+  "name": "inter-africa/simple-random-numbers",
   "description": "Simple exchange application",
   "license": "BSD-3-Clause",
   "keywords": [
@@ -7,7 +7,7 @@
     "exchnage",
     "zf2"
   ],
-  "homepage": "http://my.code.example.local/",
+  "homepage": "http://randomizer.local/",
   "require": {
     "php": ">=5.3.3",
     "zendframework/zendframework": "2.3.3",
